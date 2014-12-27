@@ -24,6 +24,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lteOnGsmDevice=1 \
         ro.telephony.default_network=9
 
+# GPS configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
+
 # NFC packages
 PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default \
